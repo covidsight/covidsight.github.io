@@ -987,7 +987,7 @@ article {
     width: 100%;
     background: #fff;
     padding: 1.5em;
-    background: white;
+    background: #ffffff;
     margin-bottom: 30px; }
     @media screen and (max-width: 768px) {
       .contact-info-wrap-flex .con-info {
@@ -997,9 +997,72 @@ article {
     margin-bottom: 0;
     color: #000; }
     .contact-info-wrap-flex p span i {
-      color: #4aca85; }
+      color: #D62828; }
     .contact-info-wrap-flex p a {
       color: #000; }
+
+
+.contact-info-wrap-flex-Ramoa {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3em; }
+  .contact-info-wrap-flex-Ramoa .con-info {
+    width: 100%;
+    background: #fff;
+    padding: 1.5em;
+    background: #ffcccc;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .contact-info-wrap-flex-Ramoa .con-info {
+        width: 100%;
+        margin: 4px !important; } }
+  .contact-info-wrap-flex-Ramoa p {
+    margin-bottom: 0;
+    color: #000; }
+    .contact-info-wrap-flex-Ramoa p span i {
+      color: #D62828; }
+    .contact-info-wrap-flex-Ramoa p a {
+      color: #000; }
+
+.contact-info-wrap-flex-Ramoa2 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 3em; }
+  .contact-info-wrap-flex-Ramoa2 .con-info {
+    width: 100%;
+    background: #fff;
+    padding: 1.5em;
+    background: #f5f5f5;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .contact-info-wrap-flex-Ramoa2 .con-info {
+        width: 100%;
+        margin: 4px !important; } }
+  .contact-info-wrap-flex-Ramoa2 p {
+    margin-bottom: 0;
+    color: #000; }
+    .contact-info-wrap-flex-Ramoa2 p span i {
+      color: #D62828; }
+    .contact-info-wrap-flex-Ramoa2 p a {
+      color: #000; }
+
+
 
 .form-control {
   -webkit-box-shadow: none;
