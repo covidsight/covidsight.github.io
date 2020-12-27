@@ -10,12 +10,7 @@
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
 
-	<!-- Facebook and Twitter Teste integration
-
-	A pressão tem de estar entre os 3.5 e os 6 bar.
-	Se tiver mais do que 6bar rebenta as ligações.
-
-	 -->
+	<!-- Facebook and Twitter Teste integration -->
 	<meta property="og:title" content=""/>
 	<meta property="og:image" content=""/>
 	<meta property="og:url" content=""/>
@@ -58,35 +53,37 @@
 
 	</head>
 	<body>
-		
-	<div class="colorlib-loader"></div>
 
 	<div id="page">
 		<nav class="colorlib-nav" role="navigation">
-			<div class="top-menu">
+			<div id="top-menu">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-2 text-center" >
-							<a href="index.html"><img src="images/CovidSight_icon.png" alt="index.html" style="width:55px;height:55px;"></a>
-							<div id="colorlib-logo"><a href="index.html">CovidSight <span class="icon"></a> 
-							
+						<div class="col-md-12 text-center" >							
+							<div id="colorlib-logo">
+								<ul>
+									<div class="col-md-3 text-center" >
+
+										<a><img src="images/CovidSight_icon.png" alt="index.html" style="width:55px;height:55px;"></a>
+										<!-- <a href="index.html">CovidSight      <span class="icon"></a> -->
+										<a>CovidSight      <span class="icon"></a> 
+									</div>
+									<div id="colorlib-menubar">
+									<div class="col-md-offset-0">
+									<div class="col-md-9 text-center" >
+										<li><a href="index.html">Home</a></li>
+										<li><a href="index.html#what">What</a></li>
+										<li><a href="index.html#problem">Problem</a></li>
+										<li><a href="index.html#mission">Mission</a></li>
+										<li><a href="index.html#market">Target Market</a></li>
+										<li><a href="index.html#team">Team</a></li>
+										<li><a href="index.html#news">Awards&News</a></li>
+										<li><a href="index.html#contact">Contact</a></li>
+									</div></div></div>
+
+								</ul>
 							</div>
-							
-						</div>
-						
-						<div class="col-md-10 text-right menu-1">
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="index.html#what">What</a></li>
-								<li><a href="index.html#problem">Problem</a></li>
-								<li><a href="index.html#mission">Mission</a></li>
-								<li><a href="index.html#market">Target Market</a></li>
-								<li><a href="index.html#team">Team</a></li>
-								<li><a href="index.html#news">Awards&News</a></li>
-								<li><a href="index.html#contact">Contact</a></li>
-							</ul>
-						</div>
-						
+						</div>						
 					</div>
 				</div>
 			</div>
@@ -587,6 +584,23 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
 	
+	<script>
+		// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
+			document.getElementById("colorlib-logo").style.fontSize = "25px";
+			document.getElementById("top-menu").style.padding = "10px 20px";
+			document.getElementById("top-menu").style.background = "#7a7a7a";
+		  } else {
+			document.getElementById("colorlib-logo").style.fontSize = "35px";
+			document.getElementById("top-menu").style.padding = "20px 30px";
+			document.getElementById("top-menu").style.background = "#c04e4e";
+		  }
+		}
+		</script>
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->

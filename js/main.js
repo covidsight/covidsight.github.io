@@ -190,6 +190,21 @@
 	};
 
 
+	var stickyNavBar = function() {
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top2').addClass('active');
+			} else {
+				$('.js-top2').removeClass('active');
+			}
+
+		});		
+
+	}
+
 	// Loading page
 	var loaderPage = function() {
 		$(".colorlib-loader").fadeOut("slow");
@@ -270,6 +285,7 @@
 		counterWayPoint();
 		owlCrouselFeatureSlide();
 		bgVideo();
+		stickyNavBar();
 	});
 
 
