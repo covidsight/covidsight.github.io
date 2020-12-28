@@ -60,28 +60,29 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12 text-center" >							
-							<div id="colorlib-logo">
-								<ul>
-									<div class="col-md-3 text-center" >
+							<div id="colorlib-logo">								
+								<div class="col-md-3 text-center" >
 
-										<a><img src="images/CovidSight_icon.png" alt="index.html" style="width:55px;height:55px;"></a>
-										<!-- <a href="index.html">CovidSight      <span class="icon"></a> -->
-										<a>CovidSight      <span class="icon"></a> 
-									</div>
-									<div id="colorlib-menubar">
-									<div class="col-md-offset-0">
-									<div class="col-md-9 text-center" >
+									<a><img src="images/CovidSight_icon.png" alt="index.html" style="width:55px;height:55px;"></a>
+									<!-- <a href="index.html">CovidSight      <span class="icon"></a> -->
+									<a>CovidSight      <span class="icon"></a> 
+								</div>
+								<div id="colorlib-menubar">
+								<div class="col-md-offset-0">
+								<div class="col-md-9 text-center menu-1" >
+									<ul>
 										<li><a href="index.html">Home</a></li>
-										<li><a href="index.html#what">What</a></li>
-										<li><a href="index.html#problem">Problem</a></li>
-										<li><a href="index.html#mission">Mission</a></li>
-										<li><a href="index.html#market">Target Market</a></li>
-										<li><a href="index.html#team">Team</a></li>
-										<li><a href="index.html#news">Awards&News</a></li>
-										<li><a href="index.html#contact">Contact</a></li>
-									</div></div></div>
+										<li><a href="#what" class="active">What</a></li>
+										<li><a href="#problem">Problem</a></li>
+										<li><a href="#mission">Mission</a></li>
+										<li><a href="#market" class="active">Target Market</a></li>
+										<li><a href="#team">Team</a></li>
+										<li><a href="#news">Awards&News</a></li>
+										<li><a href="#contact">Contact</a></li>
+									</ul>
+								</div></div></div>
 
-								</ul>
+								
 							</div>
 						</div>						
 					</div>
@@ -596,10 +597,36 @@
 		  } else {
 			document.getElementById("colorlib-logo").style.fontSize = "35px";
 			document.getElementById("top-menu").style.padding = "20px 30px";
-			document.getElementById("top-menu").style.background = "#c04e4e";
+			document.getElementById("top-menu").style.background = "#5e5050";
 		  }
 		}
 		</script>
+	<script>
+		//Change navigation style on scroll
+		window.addEventListener('scroll', event => { 
+			let nav = document.querySelector('.colorlib-nav'); 
+			
+			(window.scrollY >= 44) ? nav.classList.add('scroll') : nav.classList.remove('scroll');
+		});
+		
+		//Active navigation on scroll
+		window.addEventListener('scroll', event => {
+		let navigationLinks = document.querySelectorAll('nav ul li a');
+		let fromTop = window.scrollY;
+		
+		navigationLinks.forEach(link => {
+			let section = document.querySelector(link.hash);
+		
+			if (
+			section.offsetTop <= fromTop &&
+			section.offsetTop + section.offsetHeight > fromTop
+			) {
+			link.classList.add('active');
+			} else {
+			link.classList.remove('active');
+			}
+		});
+		}); </script>
 
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
