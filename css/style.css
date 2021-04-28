@@ -52,10 +52,7 @@ a {
     outline: none;
     text-decoration: none; }
 
-ul li a.active{
-  background: #ce4a4a;
-  color: #000;
-}
+
 
 p {
   margin-bottom: 20px; }
@@ -128,8 +125,8 @@ h1, h2, h3, h4, h5, h6, figure {
      }
      .colorlib-nav #colorlib-menubar ul li a:active {
       position: relative;
-      background-color: rgb(36, 16, 219);
-      color: black; 
+      background-color: rgb(117, 101, 97);
+      color: rgb(253, 253, 253); 
      }
   .colorlib-nav #colorlib-logo {
     
@@ -214,7 +211,7 @@ h1, h2, h3, h4, h5, h6, figure {
             .colorlib-nav ul li.has-dropdown .dropdown li a {
               padding: 2px 0;
               display: block;
-              color: #999999;
+              color: #ac0a0a;
               line-height: 1.2;
               text-transform: none;
               font-size: 13px;
@@ -251,14 +248,8 @@ h1, h2, h3, h4, h5, h6, figure {
     .colorlib-nav.scroll a{
       color: #fff;
     }
-    .colorlib-nav.scroll a.active {
-      color: #000;
-      border-bottom: 2px solid #000;
-    }
-    .colorlib-nav a.active {
-      color: darkmagenta;
-      border-bottom: 2px solid darkmagenta;
-    }
+
+
     
 
 .colorlib-video {
@@ -1358,7 +1349,7 @@ input[type="text"] {
   text-decoration: none;
   top: 1.2em !important; }
   .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
-    background: #303133; }
+    background: #376edd; }
   .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
     outline: none;
     border-bottom: none !important; }
@@ -1596,3 +1587,11 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+
+
+/* Style the active class (and buttons on mouse-over) */
+li.active{
+  background-color: #666;
+  color: white;
+}
